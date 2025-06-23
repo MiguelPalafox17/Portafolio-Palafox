@@ -1,0 +1,198 @@
+.Seccion_Presentacion {
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.Presentacion_Container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: #28073E;
+}
+
+.Presentacion_Texto,
+.Presentacion_Imagen {
+    min-width: 0;
+}
+
+.Presentacion_Texto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+.Presentacion_Texto h1 {
+    font-size: clamp(2rem, 8vw, 12vh);
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.Presentacion_Texto>p {
+    font-size: 3vh;
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    max-width: 95%;
+}
+
+.Presentacion_Imagen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.Presentacion_Imagen>img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.caja_LineaDivisora {
+    overflow: hidden;
+    line-height: 0;
+    padding: 0;
+}
+
+.LineaDivisora {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Animacion para el texto de bienvenida*/
+@keyframes lights {
+  0% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+  30% { 
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  40% { 
+    color: hsl(230, 100%, 95%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+}
+
+.Presentacion_Texto > h1 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  animation: lights 5s 750ms linear infinite;
+}
+
+
+
+.Seccion_Trabajos {
+  width: 100%;
+  height: 100%;
+}
+
+.Trabajos_Conteiner {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  justify-items: center;
+  border: solid 1px black;
+}
+
+.Titulo_Texto {
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  color: #28073E;
+}
+
+.Titulo_Texto > h1 {
+  font-family: 'Inter', sans-serif;
+  max-width: 50%;
+  min-width: 0%;
+}
+
+.Titulo_Texto > p {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  max-width: 50%;
+  min-width: 0%;
+}
+
+.Proyectos_Conteiner {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.Proyectos {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  width: 100%;
+  height: 100%;
+}
+
+.Card_Proyecto {
+  width: 100%;
+  height: 100%;
+}
+
+.Imagen_Proyecto > img {
+  width: 100%;
+  height: 100%;
+}
