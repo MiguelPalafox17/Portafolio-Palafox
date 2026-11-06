@@ -1,5 +1,5 @@
 import "./Home.css";
-import imagenPresentacion from "../../assets/PresentacionImagen.png";
+import LogoPortafolio from "../../assets/LogoPortafolio.png";
 import Recetario from "../../assets/ProyectoRecetario.png";
 
 import Card from "../../Components/Card/Card";
@@ -40,7 +40,7 @@ function Home_Presentacion() {
           <div className="Presentacion_Imagen">
             <img
               className="Imagen_Presentacion"
-              src={imagenPresentacion}
+              src={LogoPortafolio}
               alt="Imagen de Presentación"
             />
           </div>
@@ -67,15 +67,7 @@ function Home_Presentacion() {
               description="En este proyecto se considero de manera sencilla y apresurada"/>
 
               <Card imageUrl={Recetario} 
-              title = "Mi Recetario.com" 
-              description="En este proyecto se considero de manera sencilla y apresurada"/>
-
-              <Card imageUrl={Recetario} 
-              title = "Mi Recetario.com" 
-              description="En este proyecto se considero de manera sencilla y apresurada"/>
-
-              <Card imageUrl={Recetario} 
-              title = "Mi Recetario.com" 
+              title = "LevelEat" 
               description="En este proyecto se considero de manera sencilla y apresurada"/>
 
             </div>
